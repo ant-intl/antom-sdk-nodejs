@@ -180,13 +180,13 @@ Tests use temporary keys and injected transports. Published files include JavaSc
 
 ## Publishing
 
-To publish `@antom-tech/node` publicly to `https://registry.npmjs.org/`, authenticate an npm account with publishing access, install the development dependencies, and run:
+To publish `@antom-tech/node` publicly to `https://registry.npmjs.org/`, authenticate an npm account with publishing access and install the development dependencies. Commit source changes and run the release from the repository root.
 
 ```sh
 npm run release
 ```
 
-The default command runs the tests, increments the patch version in `package.json` and `package-lock.json`, builds the SDK, and installs its tarball in a temporary consumer project to verify runtime and type contracts. It then publishes that exact archive with the `latest` tag and public access. The publishing process retains terminal access for authentication.
+The default command runs the tests, increments the patch version in `package.json` and `package-lock.json`, builds the SDK, and installs its tarball in a temporary consumer project to verify runtime and type contracts. It then publishes that exact archive with the `latest` tag and public access. The publishing process retains terminal access for authentication. After npm confirms publication, the script commits the two version files and creates a local Git tag named with the exact version, such as `0.1.1` or `0.1.1-beta.0`.
 
 Use `--tag <beta|latest|pre>` to choose the npm dist-tag, and `--version <major|minor|patch>` to choose the version increment.
 
@@ -196,9 +196,9 @@ npm run release -- --tag pre --version patch
 npm run release -- --dry-run
 ```
 
-`beta` and `pre` select distribution tags for the incremented version. A preview runs the release checks against the next version in an isolated temporary copy and reports the package, registry, and tag.
+`beta` and `pre` start a prerelease series using the selected version increment and a counter of `0`. From `0.1.0`, a beta patch produces `0.1.1-beta.0` and a beta minor produces `0.2.0-beta.0`. A consecutive release in the same channel increments the counter, so `0.1.1-beta.0` becomes `0.1.1-beta.1`. Switching channels applies the selected increment to start a new series. A preview verifies the next version in an isolated temporary copy and reports the package, registry, and tag.
 
-A failed check stops the release. If a real release fails after the version increment, the candidate version remains in both manifests for inspection. Each new release invocation applies its requested increment. Review and commit the resulting manifest changes with the release.
+A failed check stops the release. If a real release fails after the version increment, the candidate version remains in both manifests for inspection. The next invocation calculates its version from that candidate. If npm confirms publication and the Git snapshot fails, complete the release commit and tag for that version before running another release.
 
 ## Export snapshots
 
