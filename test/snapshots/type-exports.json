@@ -1,0 +1,3217 @@
+{
+  "formatVersion": 1,
+  "exports": [
+    {
+      "name": "AccountBalance",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AccountHolderType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "AccountLastModified",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AccountType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "AcquirerInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Address",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AgenticAgentInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AgenticDeclineThreshold",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AgenticMandate",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AgenticMandateIntent",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AgenticPaymentMethod",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AgreementInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayAcceptDisputeRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayAcceptDisputeResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayApplyCardRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayApplyCardResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayAuthApplyTokenRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayAuthApplyTokenResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayAuthConsultRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayAuthConsultResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayAuthRevokeTokenRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayAuthRevokeTokenResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionCancelRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionCancelResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionCreateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionCreateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionInquireDetailsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionInquireDetailsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionInquireListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionInquireListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionResumeRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionResumeResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionUpdateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayBillingSubscriptionUpdateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCancelRuleRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCancelRuleResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCaptureRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCaptureResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCouponCreateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCouponCreateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCouponInquireDetailsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCouponInquireDetailsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCouponInquireListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCouponInquireListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCouponUpdateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCouponUpdateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateAuthenticationSessionRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateAuthenticationSessionResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateBindingSessionRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateBindingSessionResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateDirectPaymentRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateDirectPaymentResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateDirectRefundRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateDirectRefundResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateExchangeRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateExchangeResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateHoldRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateHoldResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateMandateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateMandateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreatePayoutRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreatePayoutResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateQuoteRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateQuoteResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateReleaseRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateReleaseResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateRuleRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateRuleResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateTransferRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreateTransferResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditGrantCreateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditGrantCreateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditGrantInquireDetailsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditGrantInquireDetailsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditGrantInquireListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditGrantInquireListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditGrantUpdateExpiryRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditGrantUpdateExpiryResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditGrantVoidRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditGrantVoidResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditNoteCreateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditNoteCreateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditNoteInquireDetailsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditNoteInquireDetailsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditNoteInquireListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditNoteInquireListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditNoteVoidRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCreditNoteVoidResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerCreatePortalLinkRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerCreatePortalLinkResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerCreateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerCreateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerDeleteRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerDeleteResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerInquireDetailsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerInquireDetailsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerInquireListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerInquireListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerUpdateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayCustomerUpdateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayDownloadDisputeEvidenceRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayDownloadDisputeEvidenceResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireAccountInfoRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireAccountInfoResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireAvailableQuotaRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireAvailableQuotaResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireBalanceRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireBalanceResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardDetailRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardDetailResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardSensitiveInfoRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardSensitiveInfoResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardTransactionEventRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardTransactionEventResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardTransactionLifecycleDetailRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardTransactionLifecycleDetailResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardTransactionLifecycleRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireCardTransactionLifecycleResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireDirectPaymentRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireDirectPaymentResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireDirectRefundRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireDirectRefundResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireExchangeRateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireExchangeRateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireExchangeRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireExchangeResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireHoldListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireHoldListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireNotificationListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireNotificationListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireNotificationRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireNotificationResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquirePaymentMethodRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquirePaymentMethodResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquirePaymentTokenRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquirePaymentTokenResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireReleaseRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireReleaseResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireRuleListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireRuleListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireSubscriptionListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireSubscriptionListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireSubscriptionPaymentRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireSubscriptionPaymentResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireSubscriptionRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquireSubscriptionResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryBalanceRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryBalanceResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryRateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryRateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryRefundRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryRefundResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryStatementDetailRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryStatementDetailResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryStatementListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryStatementListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryStatementRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInquiryStatementResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceConfirmPaymentRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceConfirmPaymentResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceCreateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceCreateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceCreateViewLinkRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceCreateViewLinkResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceExportRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceExportResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceFinalizeRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceFinalizeResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceInquireDetailsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceInquireDetailsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceInquireListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceInquireListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceMarkUncollectibleRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceMarkUncollectibleResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceReviseRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceReviseResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceSendRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceSendResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceUpdateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceUpdateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceVoidRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayInvoiceVoidResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayMeterCreateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayMeterCreateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayMeterCreateSessionRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayMeterCreateSessionResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayMeterInquireDetailsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayMeterInquireDetailsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayMeterInquireListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayMeterInquireListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayMeterUpdateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayMeterUpdateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPayCancelRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPayCancelResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPayConsultRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPayConsultResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPayQueryRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPayQueryResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPayRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPayResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPaymentSessionRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPaymentSessionResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPriceCreateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPriceCreateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPriceInquireDetailsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPriceInquireDetailsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPriceInquireListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPriceInquireListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPriceUpdateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPriceUpdateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayProductCreateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayProductCreateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayProductInquireDetailsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayProductInquireDetailsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayProductInquireListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayProductInquireListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayProductUpdateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayProductUpdateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPromotionCodeCreateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPromotionCodeCreateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPromotionCodeInquireDetailsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPromotionCodeInquireDetailsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPromotionCodeInquireListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPromotionCodeInquireListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPromotionCodeUpdateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayPromotionCodeUpdateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayReceiptExportRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayReceiptExportResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayReceiptInquireDetailsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayReceiptInquireDetailsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayReceiptInquireListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayReceiptInquireListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayReceiptSendRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayReceiptSendResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayRefundRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayRefundResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayRegisterRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayRegisterResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySdkError",
+      "kind": "class",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySettleRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySettleResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySettlementInfoUpdateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySettlementInfoUpdateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubmitAttachmentRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubmitAttachmentResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubscriptionCancelRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubscriptionCancelResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubscriptionChangeRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubscriptionChangeResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubscriptionCreateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubscriptionCreateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubscriptionUpdateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubscriptionUpdateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubscriptionsInquiryRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySubscriptionsInquiryResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySupplyDefenseDocumentRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySupplyDefenseDocumentResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySupplyEvidenceRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipaySupplyEvidenceResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxCalculateRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxCalculateResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxCancelRegistrationRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxCancelRegistrationResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxInitializeSettingsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxInitializeSettingsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxInquireCalculationRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxInquireCalculationResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxInquireRegistrationListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxInquireRegistrationListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxInquireSettingsRequest",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxInquireSettingsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxInquireTransactionListRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxInquireTransactionListResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxRegisterRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxRegisterResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxUpdateRegistrationPeriodRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxUpdateRegistrationPeriodResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxUpdateSettingsRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayTaxUpdateSettingsResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayUpdateAmountRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayUpdateAmountResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayUpdateCardRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayUpdateCardResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayUpdateCardStatusRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayUpdateCardStatusResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayUpdateHoldRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayUpdateHoldResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayUpdateRuleRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayUpdateRuleResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayVaultingPaymentMethodRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayVaultingPaymentMethodResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayVaultingQueryRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayVaultingQueryResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayVaultingSessionRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayVaultingSessionResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayVaultsFetchNonceRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayVaultsFetchNonceResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayVerifyAndCompletePaymentRequest",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AlipayVerifyAndCompletePaymentResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Amount",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AmountError",
+      "kind": "class",
+      "namespace": false
+    },
+    {
+      "name": "AmountErrorCode",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "AncillaryData",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AntomClient",
+      "kind": "class",
+      "namespace": false
+    },
+    {
+      "name": "AntomClientOptions",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Applicability",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AuthApplyTokenModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "AuthConsultModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "AuthorizationControl",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "AutomaticTax",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "BillingDiscount",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "BillingSubscriptionCancelModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "BillingSubscriptionCreateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "BillingSubscriptionInquireDetailsModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "BillingSubscriptionInquireListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "BillingSubscriptionPriceItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "BillingSubscriptionUpdateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "BillingTrialSettings",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "BrowserInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Buyer",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "BuyerTaxId",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "CardBrand",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "CardLimitDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "CardLimitInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "CardPaymentMethodDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "CardTransactionEvent",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "CardholderInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "ClassType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "CodeDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "CodeValueType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "CouponCreateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "CouponInquireDetailsModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "CouponInquireListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "CouponPaymentMethodDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "CreditGrant",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "CreditNoteCreateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "CreditNoteInquireListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "CreditNoteItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "CreditPayFeeType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "CreditPayPlan",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "CustomerBelongsTo",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "CustomerInquireListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "CustomizedInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Declaration",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "DeclarationBizSceneType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "DefaultAntomClient",
+      "kind": "class",
+      "namespace": false
+    },
+    {
+      "name": "DeliveryEstimate",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "DeliveryEstimateInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Discount",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "DiscountPaymentMethodDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "DisplayType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "DownloadDisputeEvidenceModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "Env",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "EventMerchantInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "ExternalPaymentMethodDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "ForeignExchangeQuote",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "FundMoveDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "FundTransferInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "FundTransferPartyAddress",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "FundTransferPartyName",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "FundTransferRecipient",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "FundTransferSender",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "FundingType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "FundsType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "Gaming",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Goods",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "InStorePaymentScenario",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "InquireAccountInfoModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquireCardModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquireCardSensitiveInfoModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquireCardTransactionEventModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquireCardTransactionLifecycleDetailModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquireCardTransactionLifecycleModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquireExchangeRateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquireHoldListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquirePaymentMethodModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquirePaymentTokenModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquireRuleListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquireSubscriptionPaymentModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquiryRateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquiryStatementListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InquiryStatementModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InvoiceAddress",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "InvoiceCreateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InvoiceInquireDetailsModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InvoiceInquireListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "InvoicePayment",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "InvoiceShipping",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "InvoiceUpdateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "Leg",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Limit",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Lodging",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Merchant",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "MerchantType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "Meter",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "MeterEventRequestOptions",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "MeterUploadEventBody",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "MeterUploadEventResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "MeterUploadOptions",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "MpiData",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "NotificationEvent",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "NotificationVerificationOptions",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Order",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "OrderInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "OsType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "Paginator",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Passenger",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "PassengerIdType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "PayConsultModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "PayModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "PayQueryModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "PaymentFactor",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "PaymentMethod",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "PaymentMethodDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "PaymentMethodDetailType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "PaymentMethodMetaData",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "PaymentMethodScope",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "PaymentResultInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "PaymentSessionModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "PeriodRule",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "PeriodType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "PresentmentMode",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "Price",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "ProductCodeType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "ProductImageRequestOptions",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "ProductImageUpload",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "ProductInquireListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "ProductUploadImageResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "ProductUploadOptions",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "PromotionCodeCreateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "PromotionCodeInquireDetailsModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "PromotionCodeInquireListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "PromotionResult",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "PromotionType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "PspCustomerInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Quote",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "ReceiptInquireDetailsModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "ReceiptInquireListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "RecurringSettings",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "RedirectActionForm",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "RefundFromMethod",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "RefundModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "RefundPreference",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "RegisterModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "ReleaseType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "RequestOptions",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Result",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "ResultInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "ResultStatusType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "RuleStatus",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "Service",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "SettleModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "SettlementBankAccount",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "SettlementStrategy",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Shipping",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "SignedMessage",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "SpecialApiResponse",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "SplitDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Statement",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Store",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "SubmitAttachmentModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "SubscriptionCreateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "SubscriptionInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "SubscriptionItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "SubscriptionStatus",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "SubscriptionUpdateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "SupplyEvidenceModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "TakeType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "TaxAddress",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxBreakdown",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxCalculateModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "TaxCalculatedAddress",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxCalculatedBusinessDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxCalculatedCustomerDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxCalculatedExemption",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxCalculatedExemptionJurisdiction",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxCalculatedLineItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxCalculatedShipFromDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxCalculatedShippingCost",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxCalculatedTaxId",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxHeadOffice",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TaxInquireRegistrationListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "TaxInquireTransactionListModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "TaxJurisdiction",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TerminalType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "ThreeDSResult",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Tier",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TransactionStatusType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "TransferFromDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TransferToDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "Transit",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TransitType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "name": "Trial",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TrialPhase",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "TrialPlan",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "UserName",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "name": "VaultsFetchNonceModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "VerifyAndCompletePaymentModels",
+      "kind": "namespace",
+      "namespace": true
+    },
+    {
+      "name": "Wallet",
+      "kind": "interface",
+      "namespace": false
+    }
+  ],
+  "namespaceMembers": [
+    {
+      "path": "AuthApplyTokenModels.GrantType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "AuthConsultModels.AuthCodeForm",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "AuthConsultModels.AuthMetaData",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "AuthConsultModels.AuthorizationAccessParams",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "AuthConsultModels.AuthorizationConsultDirectDebitInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "AuthConsultModels.AuthorizationConsultPassBackParams",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "AuthConsultModels.AuthorizationConsultSubMerchant",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "AuthConsultModels.AuthorizationConsultSubscriptionParams",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "AuthConsultModels.PeriodRuleParams",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "AuthConsultModels.ScopeType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "BillingSubscriptionCancelModels.BillingSubscriptionCancelCancellationDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "BillingSubscriptionCreateModels.PriceItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "BillingSubscriptionInquireDetailsModels.BillingSubscriptionDiscountInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "BillingSubscriptionInquireDetailsModels.BillingSubscriptionInquireDetailsCancellationDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "BillingSubscriptionInquireListModels.Subscription",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "BillingSubscriptionUpdateModels.BillingSubscriptionCancellationDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "BillingSubscriptionUpdateModels.BillingSubscriptionStatusChange",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "BillingSubscriptionUpdateModels.PriceItemChange",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "CouponCreateModels.CouponCreateAppliesTo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "CouponCreateModels.CouponPromotionCode",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "CouponCreateModels.PromotionCode",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "CouponInquireDetailsModels.CouponApplicableProduct",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "CouponInquireDetailsModels.CouponInquireDetailsAppliesTo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "CouponInquireListModels.Coupon",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "CreditNoteCreateModels.CreditNoteCreateItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "CreditNoteInquireListModels.CreditNoteSummary",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "CustomerInquireListModels.Customer",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "DownloadDisputeEvidenceModels.DisputeEvidenceFormatType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "DownloadDisputeEvidenceModels.DisputeEvidenceType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "InquireAccountInfoModels.AgenticBoundPaymentMethod",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquireAccountInfoModels.AgenticBoundPaymentMethodDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquireCardModels.AbaCard",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquireCardSensitiveInfoModels.CardDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquireCardTransactionEventModels.CardTransactionEventFilterType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "InquireCardTransactionEventModels.CardTransactionStatusFilterType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "InquireCardTransactionLifecycleDetailModels.CardTransactionLifecycleDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquireCardTransactionLifecycleModels.CardTransactionLifecycle",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquireExchangeRateModels.CurrencyPair",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquireExchangeRateModels.PaymentQuote",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquireExchangeRateModels.RateType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "InquireHoldListModels.ReserveHoldDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquirePaymentMethodModels.InquirePaymentMethodCard",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquirePaymentMethodModels.InquirePaymentMethodDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquirePaymentTokenModels.AgenticPaymentToken",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquireRuleListModels.ReserveRule",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquireSubscriptionPaymentModels.PaymentStatus",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "InquireSubscriptionPaymentModels.SubscriptionTransaction",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquiryRateModels.InquiryRateCondition",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquiryRateModels.RateResult",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquiryStatementListModels.TotalCount",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InquiryStatementModels.ResultResult",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InvoiceCreateModels.CustomerBusinessAddress",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InvoiceCreateModels.InvoiceCreateItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InvoiceCreateModels.InvoiceCustomerDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InvoiceInquireDetailsModels.InvoiceItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InvoiceInquireDetailsModels.InvoiceNote",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InvoiceInquireListModels.Invoice",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "InvoiceUpdateModels.InvoiceCustomField",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.AmountLimit",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.AmountLimitInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.Installment",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.InteractionType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.InterestFree",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.Logo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.PaymentEvaluation",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.PaymentMethodCategoryType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.PaymentMethodInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.PaymentOption",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.PaymentOptionDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.Plan",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.PromotionInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.SupportBank",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayConsultModels.SupportCardBrand",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayModels.ChallengeActionForm",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayModels.ChallengeTriggerSourceType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "PayModels.ChallengeType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "PayModels.OrderCodeForm",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayModels.PaymentVerificationData",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayQueryModels.CardInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayQueryModels.PaymentAttempt",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayQueryModels.PopRiskDecisionResultInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayQueryModels.RetryInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayQueryModels.Transaction",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PayQueryModels.TransactionType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.AvailablePaymentMethod",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.BillingSubscription",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.CardVerificationResult",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.PaymentMethodTypeItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.RiskAddress",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.RiskBuyer",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.RiskData",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.RiskEnv",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.RiskOrder",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.RiskSignal",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.RiskThreeDSResult",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.SubscriptionPlan",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "ProductInquireListModels.Product",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PromotionCodeCreateModels.PromotionCodeCreateMinAmount",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PromotionCodeInquireDetailsModels.PromotionCodeInquireDetailsMinAmount",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PromotionCodeInquireListModels.PromotionCodeInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "ReceiptInquireDetailsModels.ReceiptItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "ReceiptInquireListModels.Receipt",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "ReceiptInquireListModels.ReceiptPaymentMethod",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RefundModels.RefundDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RefundModels.RefundFromType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "RefundModels.RefundToBankInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.AssociationType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.Attachment",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.BusinessInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.Certificate",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.CertificateType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.Company",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.CompanyType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.CompanyUnitType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.Contact",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.ContactType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.EntityAssociations",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.Individual",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.LegalEntityType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.MerchantInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.SettlementInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.StockInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "RegisterModels.WebSite",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "SettleModels.SettleToType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "SettleModels.SettlementDetail",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "SubmitAttachmentModels.AttachmentType",
+      "kind": "type-alias",
+      "namespace": false
+    },
+    {
+      "path": "SubscriptionCreateModels.CreateSubscriptionInfo",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "SubscriptionUpdateModels.ProrationSettings",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "SupplyEvidenceModels.DisputeEvidenceResult",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "TaxCalculateModels.TaxBusinessDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "TaxCalculateModels.TaxCalculationLineItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "TaxCalculateModels.TaxCustomerDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "TaxCalculateModels.TaxExemption",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "TaxCalculateModels.TaxExemptionJurisdiction",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "TaxCalculateModels.TaxId",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "TaxCalculateModels.TaxShipFromDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "TaxCalculateModels.TaxShippingCost",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "TaxInquireRegistrationListModels.TaxRegistration",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "TaxInquireTransactionListModels.TaxTransaction",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "VaultsFetchNonceModels.Card",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "VerifyAndCompletePaymentModels.VerifyMethod",
+      "kind": "interface",
+      "namespace": false
+    }
+  ]
+}

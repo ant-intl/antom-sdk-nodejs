@@ -1,0 +1,29 @@
+/* Generated from the Antom OpenAPI schema. */
+{{#models}}
+{{#model}}
+{{#imports}}
+import type { {{{.}}} } from './{{{.}}}.js';
+{{/imports}}
+{{#vendorExtensions.x-node-union}}
+/** One of the API's permitted wire-format alternatives. */
+export type {{classname}} = {{{vendorExtensions.x-node-union}}}{{#isNullable}} | null{{/isNullable}};
+{{/vendorExtensions.x-node-union}}
+{{^vendorExtensions.x-node-union}}
+{{#isEnum}}
+/** Wire values accepted by the API. */
+export type {{classname}} = {{#allowableValues}}{{#enumVars}}{{{value}}}{{^-last}} | {{/-last}}{{/enumVars}}{{/allowableValues}}{{#isNullable}} | null{{/isNullable}};
+{{/isEnum}}
+{{^isEnum}}
+/** Wire-format {{classname}}; property names match the API JSON. */
+export interface {{classname}}{{#parent}} extends {{{parent}}}{{/parent}} {
+{{#vars}}
+  {{{vendorExtensions.x-node-wire-name}}}{{^required}}?{{/required}}: {{{vendorExtensions.x-node-type}}};
+{{/vars}}
+{{#additionalPropertiesType}}
+  [key: string]: {{{additionalPropertiesType}}};
+{{/additionalPropertiesType}}
+}
+{{/isEnum}}
+{{/vendorExtensions.x-node-union}}
+{{/model}}
+{{/models}}
