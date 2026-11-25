@@ -1,6 +1,6 @@
 # @antom-tech/node
 
-Antom's server-side Node.js SDK for Node.js 22+. It provides Promise-based business resources, TypeScript declarations, native ESM, CommonJS compatibility, and zero runtime dependencies.
+Antom's server-side SDK requires Node.js newer than 22.23.5. It provides Promise-based business resources, TypeScript declarations, native ESM, CommonJS compatibility, and zero runtime dependencies.
 
 This repository contains the runtime, generated API contracts, templates, tests, and packaged amount rules. Build a local tarball with `npm pack`, or publish the verified package to npm with `npm run release`.
 
