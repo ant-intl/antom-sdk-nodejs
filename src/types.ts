@@ -1,9 +1,6 @@
 /** Client configuration and transport contracts shared by generated operations and the signed client. */
 import { AlipaySdkError } from './errors.js';
 
-/** SDK identification shared by JSON and special transports. */
-export const SDK_USER_AGENT = 'antomsdk-nodejs/0.1.0';
-
 declare const OPERATION_TYPES: unique symbol;
 
 /** A generated POST operation carrying its request and response types. */

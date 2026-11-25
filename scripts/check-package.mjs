@@ -94,6 +94,8 @@ try {
   assert.ok(expectedOperations.length > 0, 'The internal operation registry must not be empty.');
   writeFileSync(join(temporary, 'package.json'), '{"private":true}\n');
   runNpm(['install', '--ignore-scripts', '--no-audit', '--no-fund', '--offline', join(temporary, packed.filename)], temporary);
+  const manifest = JSON.parse(readFileSync(join(temporary, 'node_modules/@antom-tech/node/package.json'), 'utf8'));
+  assert.equal(manifest.version, packed.version, 'The installed package must retain the archive version.');
   const { resourceOperations: installedOperations } = await import(pathToFileURL(join(temporary,
     'node_modules/@antom-tech/node/dist/cjs/generated/resource/index.js')).href);
   assert.deepEqual(operationSnapshot(installedOperations), expectedOperations, 'The installed internal operation registry must be unchanged.');
@@ -159,7 +161,10 @@ try {
     assert.deepEqual(await response, expected);
     assert.equal(requests.length, 1);
     assert.equal(requests[0].url, 'https://sdk.invalid/ams/api/v1/payments/pay');
-    assert.equal(typeof new Headers(requests[0].options.headers).get('Signature'), 'string');
+    const headers = new Headers(requests[0].options.headers);
+    assert.equal(typeof headers.get('Signature'), 'string');
+    assert.equal(headers.get('User-Agent'), ${JSON.stringify(`antomsdk-nodejs/${manifest.version}`)},
+      'The installed SDK must send its exact package version in User-Agent.');
   `;
   const fallbackFlags = process.features.require_module ? ['--no-experimental-require-module'] : [];
   run(process.execPath, [...fallbackFlags, '-e', `
@@ -292,9 +297,8 @@ try {
     'consumer.mts', 'consumer.cts']);
   assert.deepEqual(readFileSync(join(temporary, 'node_modules/@antom-tech/node/resources/amount-currency-rules.json')),
     readFileSync(resolve(root, 'resources/amount-currency-rules.json')));
-  console.log('Installed tarball: business-only CommonJS/ESM clients, shared/local type contracts, private infrastructure, and amount resources verified.');
+  console.log(`Installed tarball: CommonJS/ESM clients, User-Agent (antomsdk-nodejs/${manifest.version}), type contracts, private infrastructure, and amount resources verified.`);
   if (mode === '--publish') {
-    const manifest = JSON.parse(readFileSync(join(temporary, 'node_modules/@antom-tech/node/package.json'), 'utf8'));
     const registry = manifest.publishConfig.registry;
     if (values['dry-run']) {
       console.log(`Dry run. Verified ${packed.id} for public npm publication to ${registry} with tag ${values.tag}.`);
