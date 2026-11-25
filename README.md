@@ -186,7 +186,7 @@ To publish `@antom-tech/node` publicly to `https://registry.npmjs.org/`, authent
 npm run release
 ```
 
-The default command runs the tests, increments the patch version in `package.json` and `package-lock.json`, builds the SDK, and installs its tarball in a temporary consumer project to verify runtime and type contracts. The build embeds `antomsdk-nodejs/<version>` in the request `User-Agent`, and the tarball check verifies that it matches the installed package version exactly, including any prerelease suffix. The release command then publishes that exact archive with the `latest` tag and public access. The publishing process retains terminal access for authentication. After npm confirms publication, the script commits the two version files and creates a local Git tag named with the exact version, such as `0.1.1` or `0.1.1-beta.0`.
+The default command runs the tests, increments the patch version in `package.json` and `package-lock.json`, builds the SDK, and installs its tarball in a temporary consumer project to verify runtime and type contracts. It then publishes that exact archive with the `latest` tag and public access. The publishing process retains terminal access for authentication. After npm confirms publication, the script commits the two version files and creates a local Git tag named with the exact version, such as `0.1.1` or `0.1.1-beta.0`.
 
 Use `--tag <beta|latest|pre>` to choose the npm dist-tag, and `--version <major|minor|patch>` to choose the version increment.
 
