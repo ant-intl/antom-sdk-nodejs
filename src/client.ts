@@ -3,8 +3,9 @@
 import { AlipaySdkError } from './errors.js';
 import { createResources } from './generated/resource/index.js';
 import { createClientResources, type ClientResources } from './resources.js';
+import { SDK_USER_AGENT } from './sdk-user-agent.js';
 import { signRequest, verifySignature } from './signature.js';
-import { SDK_USER_AGENT, assertRequestPath, type AntomClientOptions, type Operation, type RequestOptions } from './types.js';
+import { assertRequestPath, type AntomClientOptions, type Operation, type RequestOptions } from './types.js';
 
 const RESERVED_HEADERS = new Set([
   'signature', 'client-id', 'request-time', 'response-time', 'content-type', 'agent-token',

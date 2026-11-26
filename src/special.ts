@@ -2,8 +2,9 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { connect, constants, type ClientHttp2Session, type ClientHttp2Stream } from 'node:http2';
 import { AlipaySdkError } from './errors.js';
+import { SDK_USER_AGENT } from './sdk-user-agent.js';
 import { signRequest, verifySignature } from './signature.js';
-import { SDK_USER_AGENT, type AntomClientOptions } from './types.js';
+import type { AntomClientOptions } from './types.js';
 
 const METER_PATH = '/ams/api/v1/meter/uploadEvent';
 const IMAGE_PATH = '/ams/api/v1/billing/product/uploadImage';

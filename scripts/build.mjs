@@ -9,6 +9,8 @@ import { collectNamedExports, renderNamedExports } from './export-names.mjs';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const require = createRequire(import.meta.url);
 const ts = require('typescript');
+const { version } = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
+const userAgentLiteral = JSON.stringify(`antomsdk-nodejs/${version}`);
 // Reject an expanding package surface before replacing any existing build output.
 collectNamedExports(ts, readFileSync(resolve(root, 'src/index.ts'), 'utf8'), 'src/index.ts');
 // Resource snapshots are synchronized by automation, never inferred from neighboring checkouts.
@@ -33,6 +35,9 @@ for (const options of [[], esmOptions]) {
 const rulesLiteral = JSON.stringify(rulesText);
 writeFileSync(resolve(root, 'dist/cjs/amount-rules-data.js'), `exports.amountRulesJson = ${rulesLiteral};\n`);
 writeFileSync(resolve(root, 'dist/esm/amount-rules-data.js'), `export const amountRulesJson = ${rulesLiteral};\n`);
+// Embed the package version in both formats without a runtime manifest lookup.
+writeFileSync(resolve(root, 'dist/cjs/sdk-user-agent.js'), `exports.SDK_USER_AGENT = ${userAgentLiteral};\n`);
+writeFileSync(resolve(root, 'dist/esm/sdk-user-agent.js'), `export const SDK_USER_AGENT = ${userAgentLiteral};\n`);
 const declarations = collectNamedExports(ts, readFileSync(resolve(root, 'dist/cjs/index.d.ts'), 'utf8'),
   'dist/cjs/index.d.ts');
 const esm = resolve(root, 'dist/esm');

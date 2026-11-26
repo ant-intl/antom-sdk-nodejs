@@ -1,11 +1,14 @@
 // Special transports are tested without network connections or payment credentials.
 import assert from 'node:assert/strict';
 import { EventEmitter } from 'node:events';
+import { readFileSync } from 'node:fs';
 import { createHash, generateKeyPairSync, sign, verify } from 'node:crypto';
 import { test } from 'node:test';
 import { uploadMeterEvents, uploadProductImage } from '../dist/esm/index.js';
 
 const gatewayUrl = 'https://open-sea.alipay.com';
+const { version } = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
+const expectedUserAgent = `antomsdk-nodejs/${version}`;
 const { privateKey, publicKey } = generateKeyPairSync('rsa', {
   modulusLength: 2048,
   privateKeyEncoding: { type: 'pkcs8', format: 'pem' },
@@ -62,7 +65,7 @@ test('meter uploads use HTTP/2 session authentication and preserve the productio
     'x-session-id': 'session-test', 'content-type': 'application/json; charset=UTF-8',
     accept: 'application/json', 'user-agent': adapter.observations.headers['user-agent'],
   });
-  assert.match(adapter.observations.headers['user-agent'], /^antomsdk-nodejs\/\d+\.\d+\.\d+/);
+  assert.equal(adapter.observations.headers['user-agent'], expectedUserAgent);
   assert.equal(adapter.observations.connects, 1);
   assert.equal(adapter.observations.closed, true);
 });
@@ -129,7 +132,7 @@ test('image upload signs the JSON body part and sends both bounded binary aliase
     assert.equal(init.redirect, 'error');
     const headers = new Headers(init.headers);
     assert.equal(headers.get('Agent-Token'), 'agent-test');
-    assert.match(headers.get('User-Agent'), /^antomsdk-nodejs\/\d+\.\d+\.\d+/);
+    assert.equal(headers.get('User-Agent'), expectedUserAgent);
     const wireBody = Buffer.from(init.body).toString('utf8');
     const body = JSON.stringify({ productId: 'product-1', fileSha256: createHash('sha256').update(file).digest('hex') });
     assert.ok(wireBody.includes(`Content-Type: application/json; charset=UTF-8\r\n\r\n${body}\r\n`));
