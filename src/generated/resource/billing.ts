@@ -859,6 +859,7 @@ export interface AlipayBillingSubscriptionUpdateResponse {
     "creditNoteAmount"?: number;
     "creditNoteCurrency"?: string;
     "creditNoteId"?: string;
+    "creditNoteIds"?: Array<string>;
     "pendingUpdate"?: boolean;
     "prorationInvoiceAmount"?: number;
     "prorationInvoiceCurrency"?: string;
