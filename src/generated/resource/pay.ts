@@ -2,7 +2,7 @@
 import { defineOperation } from '../../types.js';
 import type { OperationExecutor } from '../../types.js';
 import { bindOperation } from '../../resources.js';
-import type { AcquirerInfo, AgreementInfo, Amount, AutomaticTax, Buyer, CreditPayPlan, CustomizedInfo, Env, FundTransferInfo, FundsType, Goods, Merchant, Order, PaymentFactor, PaymentMethod, PaymentMethodDetail, PaymentMethodMetaData, PaymentMethodScope, PaymentResultInfo, ProductCodeType, PromotionResult, PspCustomerInfo, Quote, RedirectActionForm, ReleaseType, Result, RuleStatus, SettlementStrategy, Shipping, SplitDetail, SubscriptionInfo, TakeType, TransactionStatusType, Transit } from '../share.js';
+import type { AcquirerInfo, AgreementInfo, Amount, AutomaticTax, Buyer, CreditPayPlan, CustomizedInfo, Env, FundTransferInfo, FundsType, Goods, Merchant, Order, PaymentFactor, PaymentMethod, PaymentMethodDetail, PaymentMethodScope, PaymentResultInfo, ProductCodeType, PromotionResult, PspCustomerInfo, Quote, RedirectActionForm, ReleaseType, Result, RuleStatus, SettlementStrategy, Shipping, SplitDetail, SubscriptionInfo, TakeType, TransactionStatusType, Transit } from '../share.js';
 import type * as InquireExchangeRateModels from '../model/inquireexchangerate.js';
 import type * as InquireHoldListModels from '../model/inquireholdlist.js';
 import type * as InquirePaymentMethodModels from '../model/inquirepaymentmethod.js';
@@ -12,6 +12,7 @@ import type * as PayConsultModels from '../model/payconsult.js';
 import type * as PaymentSessionModels from '../model/paymentsession.js';
 import type * as PayQueryModels from '../model/payquery.js';
 import type * as RefundModels from '../model/refund.js';
+import type * as VaultingPaymentMethodModels from '../model/vaultingpaymentmethod.js';
 import type * as VaultsFetchNonceModels from '../model/vaultsfetchnonce.js';
 import type * as VerifyAndCompletePaymentModels from '../model/verifyandcompletepayment.js';
 
@@ -158,6 +159,7 @@ export interface AlipayPaymentSessionRequest {
     "customizedInfo"?: CustomizedInfo;
     "enableInstallmentCollection"?: boolean;
     "env"?: Env;
+    "excludedPaymentMethod"?: PaymentSessionModels.ExcludedPaymentMethod;
     "fundTransferInfo"?: FundTransferInfo;
     "locale"?: string;
     "merchantAccountId"?: string;
@@ -281,7 +283,7 @@ export interface AlipayVaultingPaymentMethodRequest {
     "merchantAccountId"?: string;
     "merchantRegion"?: string;
     "metadata"?: string;
-    "paymentMethodDetail": PaymentMethodDetail;
+    "paymentMethodDetail": VaultingPaymentMethodModels.VaultingRequestPaymentMethodDetail;
     "redirectUrl": string;
     "vaultingCurrency"?: string;
     "vaultingNotificationUrl": string;
@@ -295,11 +297,14 @@ export interface AlipayVaultingQueryRequest {
     "vaultingRequestId": string;
 }
 
+/* Generated from the Antom OpenAPI schema. */
 /** Wire-format AlipayVaultingSessionRequest; property names match the API JSON. */
 export interface AlipayVaultingSessionRequest {
     "is3DSAuthentication"?: boolean;
     "merchantRegion"?: string;
-    "paymentMethodMetaData"?: PaymentMethodMetaData;
+    "paymentMethodMetaData"?: {
+        [key: string]: any | null;
+    };
     "paymentMethodType": string;
     "redirectUrl"?: string;
     "vaultingNotificationUrl": string;
@@ -468,6 +473,7 @@ export interface AlipayPayConsultResponse {
 
 /** Wire-format AlipayPaymentSessionResponse; property names match the API JSON. */
 export interface AlipayPaymentSessionResponse {
+    "customerId"?: string;
     "invoiceId"?: string;
     "normalUrl"?: string;
     "paymentSessionData": string;

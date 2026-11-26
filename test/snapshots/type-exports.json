@@ -2087,13 +2087,13 @@
       "namespace": false
     },
     {
-      "name": "PaymentMethodMetaData",
-      "kind": "interface",
+      "name": "PaymentMethodScope",
+      "kind": "type-alias",
       "namespace": false
     },
     {
-      "name": "PaymentMethodScope",
-      "kind": "type-alias",
+      "name": "PaymentPreference",
+      "kind": "interface",
       "namespace": false
     },
     {
@@ -2490,6 +2490,11 @@
       "name": "UserName",
       "kind": "interface",
       "namespace": false
+    },
+    {
+      "name": "VaultingPaymentMethodModels",
+      "kind": "namespace",
+      "namespace": true
     },
     {
       "name": "VaultsFetchNonceModels",
@@ -2934,12 +2939,32 @@
       "namespace": false
     },
     {
+      "path": "PaymentSessionModels.BillingCustomerDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
       "path": "PaymentSessionModels.BillingSubscription",
       "kind": "interface",
       "namespace": false
     },
     {
       "path": "PaymentSessionModels.CardVerificationResult",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.CustomerAddress",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.CustomerTaxId",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.ExcludedPaymentMethod",
       "kind": "interface",
       "namespace": false
     },
@@ -3200,6 +3225,11 @@
     },
     {
       "path": "TaxInquireTransactionListModels.TaxTransaction",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "VaultingPaymentMethodModels.VaultingRequestPaymentMethodDetail",
       "kind": "interface",
       "namespace": false
     },
