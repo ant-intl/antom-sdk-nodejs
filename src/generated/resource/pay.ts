@@ -444,6 +444,8 @@ export interface AlipayInquiryRefundResponse {
     "customizedInfo"?: CustomizedInfo;
     "grossSettlementAmount"?: Amount;
     "metadata"?: string;
+    "paymentId"?: string;
+    "paymentRequestId"?: string;
     "refundAmount"?: Amount;
     "refundId"?: string;
     "refundRequestId"?: string;
