@@ -5,6 +5,7 @@ export type {
   AntomClientOptions, NotificationVerificationOptions, RequestOptions, SignedMessage,
 } from './types.js';
 export type { MeterEventRequestOptions, ProductImageRequestOptions } from './resources.js';
+export type { PaymentMethodMetaData } from './compatibility.js';
 export { signRequest, verifyNotification, verifySignature } from './signature.js';
 export { AmountError, AmountUtil, fromAmount, toAmount, validateAmount } from './amount.js';
 export type { AmountErrorCode } from './amount.js';
@@ -30,7 +31,7 @@ export type {
   FundingType, FundsType, Gaming, Goods, InStorePaymentScenario, InvoiceAddress, InvoicePayment,
   InvoiceShipping, Leg, Limit, Lodging, Merchant, MerchantType, Meter, MpiData, NotificationEvent,
   Order, OrderInfo, OsType, Paginator, Passenger, PassengerIdType, PaymentFactor, PaymentMethod,
-  PaymentMethodDetail, PaymentMethodDetailType, PaymentMethodMetaData, PaymentMethodScope,
+  PaymentMethodDetail, PaymentMethodDetailType, PaymentMethodScope, PaymentPreference,
   PaymentResultInfo, PeriodRule, PeriodType, PresentmentMode, Price, ProductCodeType,
   PromotionResult, PromotionType, PspCustomerInfo, Quote, RecurringSettings, RedirectActionForm,
   RefundFromMethod, RefundPreference, ReleaseType, Result, ResultInfo, ResultStatusType, RuleStatus,
@@ -174,7 +175,7 @@ export type {
   PromotionCodeInquireDetailsModels, PromotionCodeInquireListModels, ReceiptInquireDetailsModels,
   ReceiptInquireListModels, RefundModels, RegisterModels, SettleModels, SubmitAttachmentModels,
   SubscriptionCreateModels, SubscriptionUpdateModels, SupplyEvidenceModels, TaxCalculateModels,
-  TaxInquireRegistrationListModels, TaxInquireTransactionListModels,
+  TaxInquireRegistrationListModels, TaxInquireTransactionListModels, VaultingPaymentMethodModels,
   VaultsFetchNonceModels, VerifyAndCompletePaymentModels,
 } from './generated/index.js';
 // END GENERATED API EXPORTS

@@ -138,10 +138,9 @@ export interface AuthorizationControl {
     "cardLimitDetail": CardLimitDetail;
     "cardLimitInfo"?: CardLimitInfo;
     "email"?: string;
-    "paymentPreferenceCurrencies"?: Array<string>;
+    "paymentPreference"?: PaymentPreference;
     "phoneNo"?: string;
     "refundPreference"?: RefundPreference;
-    "sameCurrencyPreference"?: boolean;
     "threeDSMode"?: string;
 }
 
@@ -837,7 +836,6 @@ export interface PaymentMethodDetail {
     "externalAccount"?: ExternalPaymentMethodDetail;
     "interactionType"?: string;
     "paymentMethodDetailType"?: PaymentMethodDetailType;
-    "paymentMethodMetaData"?: PaymentMethodMetaData;
     "paymentMethodType": string;
     "wallet"?: Wallet;
 }
@@ -847,14 +845,14 @@ export interface PaymentMethodDetail {
 export type PaymentMethodDetailType = 'CARD' | 'EXTERNALACCOUNT' | 'COUPON' | 'DISCOUNT';
 
 /* Generated from the Antom OpenAPI schema. */
-/** Wire-format PaymentMethodMetaData; property names match the API JSON. */
-export interface PaymentMethodMetaData {
-    "recurringType"?: 'SCHEDULED' | 'UNSCHEDULED';
-}
-
-/* Generated from the Antom OpenAPI schema. */
 /** Wire values accepted by the API. */
 export type PaymentMethodScope = 'ALL' | 'CARD';
+
+/* Generated from the Antom OpenAPI schema. */
+/** Wire-format PaymentPreference; property names match the API JSON. */
+export interface PaymentPreference {
+    "currencyOrder"?: Array<string>;
+}
 
 /** Wire-format PaymentResultInfo; property names match the API JSON. */
 export interface PaymentResultInfo {

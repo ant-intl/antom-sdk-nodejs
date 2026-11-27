@@ -35,6 +35,11 @@ export interface CardVerificationResult {
     "threeDSResult": RiskThreeDSResult;
 }
 
+/** Wire-format ExcludedPaymentMethod; property names match the API JSON. */
+export interface ExcludedPaymentMethod {
+    "paymentMethodTypeList"?: Array<PaymentMethodTypeItem>;
+}
+
 /* Generated from the Antom OpenAPI schema. */
 /** Wire-format PaymentMethodTypeItem; property names match the API JSON. */
 export interface PaymentMethodTypeItem {
