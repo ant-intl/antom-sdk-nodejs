@@ -9,12 +9,45 @@ export interface AvailablePaymentMethod {
     "paymentMethodTypeList"?: Array<PaymentMethodTypeItem>;
 }
 
+/* Generated from the Antom OpenAPI schema. */
+/** Wire-format BillingCustomerAddress; property names match the API JSON. */
+export interface BillingCustomerAddress {
+    "address"?: string;
+    "addressDetail"?: string;
+    "city"?: string;
+    "country"?: string;
+    "state"?: string;
+    "zipcode"?: string;
+}
+
+/** Wire-format BillingCustomerDetails; property names match the API JSON. */
+export interface BillingCustomerDetails {
+    "billingAddress"?: BillingCustomerAddress;
+    "businessAddress"?: BillingCustomerAddress;
+    "businessName"?: string;
+    "customerType"?: string;
+    "fullName"?: string;
+    "shippingAddress"?: BillingCustomerAddress;
+    "taxIds"?: Array<BillingCustomerTaxId>;
+}
+
+/* Generated from the Antom OpenAPI schema. */
+/** Wire-format BillingCustomerTaxId; property names match the API JSON. */
+export interface BillingCustomerTaxId {
+    "country"?: string;
+    "region"?: string;
+    "type"?: string;
+    "value"?: string;
+}
+
 /** Wire-format BillingSubscription; property names match the API JSON. */
 export interface BillingSubscription {
     "allowPromotionCode"?: boolean;
     "cancelAt"?: string;
     "cancelAtPeriodEnd"?: boolean;
     "collectionMethod"?: string;
+    "customerDetails"?: BillingCustomerDetails;
+    "customerEmail"?: string;
     "customerId"?: string;
     "daysUntilDue"?: number;
     "defaultPaymentMethod"?: string;
@@ -33,6 +66,11 @@ export interface CardVerificationResult {
     "avsResult": string;
     "cvvResult": string;
     "threeDSResult": RiskThreeDSResult;
+}
+
+/** Wire-format ExcludedPaymentMethod; property names match the API JSON. */
+export interface ExcludedPaymentMethod {
+    "paymentMethodTypeList"?: Array<PaymentMethodTypeItem>;
 }
 
 /* Generated from the Antom OpenAPI schema. */
