@@ -10,7 +10,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const require = createRequire(import.meta.url);
 const ts = require('typescript');
 const { version } = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
-const userAgentLiteral = JSON.stringify(`antomsdk-nodejs/${version}`);
+const userAgentLiteral = JSON.stringify(`global-open-sdk-nodejs/${version}`);
 // Reject an expanding package surface before replacing any existing build output.
 collectNamedExports(ts, readFileSync(resolve(root, 'src/index.ts'), 'utf8'), 'src/index.ts');
 // Resource snapshots are synchronized by automation, never inferred from neighboring checkouts.

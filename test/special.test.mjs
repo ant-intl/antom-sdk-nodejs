@@ -8,7 +8,7 @@ import { uploadMeterEvents, uploadProductImage } from '../dist/esm/index.js';
 
 const gatewayUrl = 'https://open-sea.alipay.com';
 const { version } = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
-const expectedUserAgent = `antomsdk-nodejs/${version}`;
+const expectedUserAgent = `global-open-sdk-nodejs/${version}`;
 const { privateKey, publicKey } = generateKeyPairSync('rsa', {
   modulusLength: 2048,
   privateKeyEncoding: { type: 'pkcs8', format: 'pem' },

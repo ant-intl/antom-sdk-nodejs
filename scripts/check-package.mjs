@@ -163,7 +163,7 @@ try {
     assert.equal(requests[0].url, 'https://sdk.invalid/ams/api/v1/payments/pay');
     const headers = new Headers(requests[0].options.headers);
     assert.equal(typeof headers.get('Signature'), 'string');
-    assert.equal(headers.get('User-Agent'), ${JSON.stringify(`antomsdk-nodejs/${manifest.version}`)},
+    assert.equal(headers.get('User-Agent'), ${JSON.stringify(`global-open-sdk-nodejs/${manifest.version}`)},
       'The installed SDK must send its exact package version in User-Agent.');
   `;
   const fallbackFlags = process.features.require_module ? ['--no-experimental-require-module'] : [];
@@ -297,7 +297,7 @@ try {
     'consumer.mts', 'consumer.cts']);
   assert.deepEqual(readFileSync(join(temporary, 'node_modules/@antom-tech/node/resources/amount-currency-rules.json')),
     readFileSync(resolve(root, 'resources/amount-currency-rules.json')));
-  console.log(`Installed tarball: CommonJS/ESM clients, User-Agent (antomsdk-nodejs/${manifest.version}), type contracts, private infrastructure, and amount resources verified.`);
+  console.log(`Installed tarball: CommonJS/ESM clients, User-Agent (global-open-sdk-nodejs/${manifest.version}), type contracts, private infrastructure, and amount resources verified.`);
   if (mode === '--publish') {
     const registry = manifest.publishConfig.registry;
     if (values['dry-run']) {
