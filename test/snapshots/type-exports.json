@@ -2097,6 +2097,11 @@
       "namespace": false
     },
     {
+      "name": "PaymentPreference",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
       "name": "PaymentResultInfo",
       "kind": "interface",
       "namespace": false
@@ -2490,6 +2495,11 @@
       "name": "UserName",
       "kind": "interface",
       "namespace": false
+    },
+    {
+      "name": "VaultingPaymentMethodModels",
+      "kind": "namespace",
+      "namespace": true
     },
     {
       "name": "VaultsFetchNonceModels",
@@ -2934,12 +2944,32 @@
       "namespace": false
     },
     {
+      "path": "PaymentSessionModels.BillingCustomerAddress",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.BillingCustomerDetails",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.BillingCustomerTaxId",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
       "path": "PaymentSessionModels.BillingSubscription",
       "kind": "interface",
       "namespace": false
     },
     {
       "path": "PaymentSessionModels.CardVerificationResult",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.ExcludedPaymentMethod",
       "kind": "interface",
       "namespace": false
     },
@@ -3200,6 +3230,11 @@
     },
     {
       "path": "TaxInquireTransactionListModels.TaxTransaction",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "VaultingPaymentMethodModels.VaultingRequestPaymentMethodDetail",
       "kind": "interface",
       "namespace": false
     },
