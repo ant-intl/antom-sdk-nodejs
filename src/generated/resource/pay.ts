@@ -161,6 +161,7 @@ export interface AlipayPaymentSessionRequest {
     "env"?: Env;
     "excludedPaymentMethod"?: PaymentSessionModels.ExcludedPaymentMethod;
     "fundTransferInfo"?: FundTransferInfo;
+    "invoiceCreation"?: PaymentSessionModels.PaymentSessionInvoiceCreation;
     "locale"?: string;
     "merchantAccountId"?: string;
     "merchantRegion"?: string;
@@ -206,6 +207,7 @@ export interface AlipayPayRequest {
     "env": Env;
     "extendInfo"?: string;
     "fundTransferInfo"?: FundTransferInfo;
+    "invoiceCreation"?: PayModels.PayInvoiceCreation;
     "isAuthorization"?: boolean;
     "locale"?: string;
     "merchant"?: Merchant;

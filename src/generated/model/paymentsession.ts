@@ -49,6 +49,12 @@ export interface PaymentMethodTypeItem {
 }
 
 /* Generated from the Antom OpenAPI schema. */
+/** Wire-format PaymentSessionInvoiceCreation; property names match the API JSON. */
+export interface PaymentSessionInvoiceCreation {
+    "enabled"?: string;
+}
+
+/* Generated from the Antom OpenAPI schema. */
 /** Wire-format RiskAddress; property names match the API JSON. */
 export interface RiskAddress {
     "isBillShipStateSame": boolean;
