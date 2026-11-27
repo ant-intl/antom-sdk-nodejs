@@ -26,6 +26,12 @@ export interface OrderCodeForm {
 }
 
 /* Generated from the Antom OpenAPI schema. */
+/** Wire-format PayInvoiceCreation; property names match the API JSON. */
+export interface PayInvoiceCreation {
+    "enabled"?: string;
+}
+
+/* Generated from the Antom OpenAPI schema. */
 /** Wire-format PaymentVerificationData; property names match the API JSON. */
 export interface PaymentVerificationData {
     "authenticationCode"?: string;

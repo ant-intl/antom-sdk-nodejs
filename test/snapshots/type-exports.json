@@ -2904,6 +2904,11 @@
       "namespace": false
     },
     {
+      "path": "PayModels.PayInvoiceCreation",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
       "path": "PayModels.PaymentVerificationData",
       "kind": "interface",
       "namespace": false
@@ -2960,6 +2965,11 @@
     },
     {
       "path": "PaymentSessionModels.PaymentMethodTypeItem",
+      "kind": "interface",
+      "namespace": false
+    },
+    {
+      "path": "PaymentSessionModels.PaymentSessionInvoiceCreation",
       "kind": "interface",
       "namespace": false
     },
